@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones - Comparador</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        .demo-box {
+            background: rgba(255,255,255,0.6);
+            padding: var(--space-xl);
+            border-radius: var(--radius);
+            border: 1px dashed var(--border);
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <header style="text-align: center; padding: var(--space-xl) 0;">
+            <h1>Animaciones</h1>
+            <p style="color: var(--ink-light);">
+                <a href="../../index.html" style="color: var(--accent); text-decoration: none;">← Volver al índice</a>
+            </p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Animaciones de Entrada</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-label">Fade In</div>
+                    <div class="demo-box">
+                        <div class="card fade-in" style="max-width: 300px;">
+                            <div class="card-title">Aparece suavemente</div>
+                            <p style="margin: 0;">Fade in con desplazamiento vertical.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Stamp In</div>
+                    <div class="demo-box">
+                        <span class="stamp stamp-urgent stamp-in" style="font-size: 1.2rem; padding: var(--space-sm) var(--space-lg);">
+                            ¡URGENTE!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Hover Effects</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-label">Lift (Elevación)</div>
+                    <div class="card">
+                        <div class="card-title">Pasa el ratón</div>
+                        <p style="margin: 0;">Esta tarjeta se eleva al hacer hover.</p>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Botón con lift</div>
+                    <button class="btn btn-primary">Hover aquí</button>
+                    <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--ink-light);">
+                        El botón se eleva y aumenta su sombra.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Typewriter Effect</h2>
+            <p class="section-desc">Texto que aparece carácter a carácter (necesita JS para implementación real)</p>
+            
+            <div class="compare-grid">
+                <div class="compare-item" style="grid-column: span 2;">
+                    <div class="compare-label">Simulación Visual</div>
+                    <div class="demo-box">
+                        <p class="typewriter" style="font-family: var(--font-mono); font-size: 1rem; margin: 0;">
+                            Texto apareciendo...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Nota sobre Accesibilidad</h2>
+            <div class="card">
+                <p style="margin: 0;">
+                    <strong>Prefers-reduced-motion:</strong> Todas las animaciones respetan la preferencia del sistema 
+                    <code>prefers-reduced-motion</code>. Los usuarios que prefieren menos movimiento verán versiones 
+                    instantáneas de estas transiciones.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
