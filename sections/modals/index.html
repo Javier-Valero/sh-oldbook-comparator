@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modales - Comparador</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <header style="text-align: center; padding: var(--space-xl) 0;">
+            <h1>Modales y Overlays</h1>
+            <p style="color: var(--ink-light);">
+                <a href="../../index.html" style="color: var(--accent); text-decoration: none;">← Volver al índice</a>
+            </p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Modal Centrado</h2>
+            <p class="section-desc">Representación estática de un modal (requiere JS para funcionalidad real)</p>
+            
+            <div class="modal-overlay" style="position: relative; height: 400px;">
+                <div class="modal">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Detalle de Pista</h3>
+                        <button class="modal-close">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-meta">Pista #12 — Carta sin remitente</div>
+                        <p>
+                            El papel de alta calidad sugiere que el remitente pertenece a la clase alta. 
+                            La tinta utilizada es poco común en esta zona de Londres.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary">Cerrar</button>
+                        <button class="btn btn-primary">Añadir a expediente</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Alerts / Notificaciones</h2>
+            
+            <div class="alert alert-info">
+                <strong>Info:</strong> Nueva pista disponible en Baker Street.
+            </div>
+            <div class="alert alert-success">
+                <strong>Éxito:</strong> Caso resuelto correctamente.
+            </div>
+            <div class="alert alert-warning">
+                <strong>Advertencia:</strong> El sospechoso puede escapar si no actúas pronto.
+            </div>
+            <div class="alert alert-danger">
+                <strong>Error:</strong> No se pudo verificar la coartada.
+            </div>
+        </section>
+    </div>
+</body>
+</html>
