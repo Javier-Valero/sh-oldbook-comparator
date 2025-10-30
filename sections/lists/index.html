@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas - Comparador</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <header style="text-align: center; padding: var(--space-xl) 0;">
+            <h1>Listas y Navegación</h1>
+            <p style="color: var(--ink-light);">
+                <a href="../../index.html" style="color: var(--accent); text-decoration: none;">← Volver al índice</a>
+            </p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Lista de Casos</h2>
+            
+            <ul class="list-cases">
+                <li>
+                    <div>
+                        <strong>El misterio de Whitechapel</strong>
+                        <div style="font-size: 0.85rem; color: var(--ink-light);">Iniciado: 15 Oct 1887</div>
+                    </div>
+                    <span class="stamp stamp-urgent">URGENTE</span>
+                </li>
+                <li>
+                    <div>
+                        <strong>La desaparición del rubí</strong>
+                        <div style="font-size: 0.85rem; color: var(--ink-light);">Iniciado: 10 Oct 1887</div>
+                    </div>
+                    <span class="stamp">ABIERTO</span>
+                </li>
+                <li>
+                    <div>
+                        <strong>El enigma de Baker Street</strong>
+                        <div style="font-size: 0.85rem; color: var(--ink-light);">Iniciado: 1 Oct 1887</div>
+                    </div>
+                    <span class="stamp">CERRADO</span>
+                </li>
+            </ul>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Breadcrumbs</h2>
+            
+            <nav class="breadcrumbs">
+                <a href="#">Inicio</a>
+                <span class="breadcrumbs-separator">›</span>
+                <a href="#">Casos</a>
+                <span class="breadcrumbs-separator">›</span>
+                <span>Whitechapel</span>
+            </nav>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Tags / Filtros</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm);">
+                <span class="tag">Asesinato</span>
+                <span class="tag">Robo</span>
+                <span class="tag">Desaparición</span>
+                <span class="tag">Londres</span>
+                <span class="tag">1887</span>
+                <span class="tag tag-removable">Scotland Yard <span class="tag-close">×</span></span>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Paginación</h2>
+            
+            <nav class="pagination">
+                <button class="pagination-btn" disabled>‹ Anterior</button>
+                <a href="#" class="pagination-btn active">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn">3</a>
+                <button class="pagination-btn">Siguiente ›</button>
+            </nav>
+        </section>
+    </div>
+</body>
+</html>
