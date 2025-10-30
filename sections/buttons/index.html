@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones - Comparador</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <header style="text-align: center; padding: var(--space-xl) 0;">
+            <h1>Botones</h1>
+            <p style="color: var(--ink-light);">
+                <a href="../../index.html" style="color: var(--accent); text-decoration: none;">← Volver al índice</a>
+            </p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Estilos de Botones</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-label">Primario</div>
+                    <button class="btn btn-primary">Avanzar caso</button>
+                    <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--ink-light);">
+                        Para acciones principales e importantes.
+                    </p>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Secundario</div>
+                    <button class="btn btn-secondary">Leer pista</button>
+                    <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--ink-light);">
+                        Para acciones secundarias.
+                    </p>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Ghost</div>
+                    <button class="btn btn-ghost">Cancelar</button>
+                    <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--ink-light);">
+                        Para acciones terciarias o de cancelación.
+                    </p>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Stamp</div>
+                    <button class="btn btn-stamp">Archivar</button>
+                    <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--ink-light);">
+                        Estilo sello/timbre para acciones de estado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Estados</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-label">Normal → Hover</div>
+                    <button class="btn btn-primary">Pasa el ratón</button>
+                    <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--ink-light);">
+                        Se eleva con sombra al hacer hover.
+                    </p>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Deshabilitado</div>
+                    <button class="btn btn-primary" disabled>No disponible</button>
+                    <button class="btn btn-secondary" disabled style="margin-top: var(--space-sm);">No disponible</button>
+                    <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--ink-light);">
+                        Opacidad reducida, sin interacción.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Tamaños</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-label">Pequeño</div>
+                    <button class="btn btn-primary" style="font-size: 0.85rem; padding: 6px 12px;">Botón pequeño</button>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Normal</div>
+                    <button class="btn btn-primary">Botón normal</button>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Grande</div>
+                    <button class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 24px;">Botón grande</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Con Iconos (simulado)</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <button class="btn btn-primary">🔍 Investigar</button>
+                    <button class="btn btn-secondary" style="margin-top: var(--space-sm);">📋 Ver expediente</button>
+                    <button class="btn btn-ghost" style="margin-top: var(--space-sm);">🏠 Volver a Baker St</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
