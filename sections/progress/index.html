@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progreso - Comparador</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <header style="text-align: center; padding: var(--space-xl) 0;">
+            <h1>Progreso e Indicadores</h1>
+            <p style="color: var(--ink-light);">
+                <a href="../../index.html" style="color: var(--accent); text-decoration: none;">← Volver al índice</a>
+            </p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Barras de Progreso</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item" style="grid-column: span 2;">
+                    <div class="compare-label">70% Completado</div>
+                    <p style="margin: 0 0 var(--space-sm) 0;">Progreso del caso: 7/10 pistas encontradas</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">30% Completado</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">100% Completado</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Badges y Stamps</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-md);">
+                <span class="stamp">ABIERTO</span>
+                <span class="stamp stamp-urgent">URGENTE</span>
+                <span class="stamp">CERRADO</span>
+                <span class="stamp">ARCHIVADO</span>
+                <span class="stamp">PENDIENTE</span>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Contadores</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; font-family: var(--font-display); color: var(--accent); line-height: 1;">42</div>
+                        <div style="font-size: 0.9rem; color: var(--ink-light); margin-top: var(--space-xs);">Casos resueltos</div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; font-family: var(--font-display); color: var(--accent); line-height: 1;">17</div>
+                        <div style="font-size: 0.9rem; color: var(--ink-light); margin-top: var(--space-xs);">Pistas encontradas</div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; font-family: var(--font-display); color: var(--accent); line-height: 1;">5</div>
+                        <div style="font-size: 0.9rem; color: var(--ink-light); margin-top: var(--space-xs);">Sospechosos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Loading Spinner</h2>
+            
+            <div class="compare-item">
+                <div class="compare-label">Cargando...</div>
+                <div class="spinner"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
