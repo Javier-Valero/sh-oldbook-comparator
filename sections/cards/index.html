@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas - Comparador</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <header style="text-align: center; padding: var(--space-xl) 0;">
+            <h1>Tarjetas</h1>
+            <p style="color: var(--ink-light);">
+                <a href="../../index.html" style="color: var(--accent); text-decoration: none;">← Volver al índice</a>
+            </p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Tipos de Tarjetas</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-label">Tarjeta Simple</div>
+                    <div class="card">
+                        <div class="card-title">Pista: Carta sin remitente</div>
+                        <div class="card-meta">Hallada: 11:00 PM — Salón principal</div>
+                        <p style="margin: 0;">
+                            El papel muestra una caligrafía firme. Mención a un encuentro en "la vieja taberna".
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Expediente</div>
+                    <div class="card card-expedient">
+                        <div class="card-title">Expediente: John Watson</div>
+                        <div class="card-meta">Sospechoso • Última visita: 10:45 PM</div>
+                        <p style="margin: 0 0 var(--space-sm) 0;">
+                            Médico retirado. Residente en Baker Street. Sin coartada confirmada.
+                        </p>
+                        <span class="stamp">Interrogar</span>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Pista Marcada (con pin)</div>
+                    <div class="card card-clue">
+                        <div class="card-title">Evidencia física</div>
+                        <div class="card-meta">Recogida: Escena del crimen</div>
+                        <p style="margin: 0;">
+                            Fragmento de tela azul encontrado junto a la ventana rota.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Con Acciones</div>
+                    <div class="card">
+                        <div class="card-title">Testigo: Mary Morstan</div>
+                        <div class="card-meta">Declaración pendiente</div>
+                        <p style="margin: 0 0 var(--space-md) 0;">
+                            Vio a un hombre salir corriendo del edificio cerca de medianoche.
+                        </p>
+                        <button class="btn btn-secondary" style="font-size: 0.9rem; padding: 6px 14px;">Interrogar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"><div class="divider-line"></div></div>
+
+        <section class="section">
+            <h2 class="section-title">Densidad de Información</h2>
+            
+            <div class="compare-grid">
+                <div class="compare-item">
+                    <div class="compare-label">Compacta</div>
+                    <div class="card" style="padding: var(--space-md);">
+                        <div class="card-title" style="font-size: 1rem; margin-bottom: var(--space-xs);">Pista rápida</div>
+                        <div class="card-meta" style="font-size: 0.8rem;">Breve descripción</div>
+                    </div>
+                </div>
+
+                <div class="compare-item">
+                    <div class="compare-label">Espaciosa</div>
+                    <div class="card" style="padding: var(--space-xl);">
+                        <div class="card-title" style="font-size: 1.4rem;">Pista detallada</div>
+                        <div class="card-meta">Con más información y espacio</div>
+                        <p style="margin-top: var(--space-md);">
+                            Texto adicional con descripción extendida de la pista encontrada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
