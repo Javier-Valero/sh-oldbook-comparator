@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherlock Holmes - Comparador Visual UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+        .nav-card {
+            background: rgba(255,255,255,0.8);
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            text-decoration: none;
+            color: var(--ink);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            display: block;
+        }
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .nav-card h3 {
+            margin: 0 0 var(--space-sm) 0;
+            font-size: 1.25rem;
+        }
+        .nav-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--ink-light);
+            text-align: left;
+        }
+        .hero {
+            text-align: center;
+            padding: var(--space-xl) 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: var(--space-sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <header class="hero">
+            <h1>Sherlock Holmes</h1>
+            <div class="signature">Detective Asesor - Comparador Visual</div>
+            <p style="margin-top: var(--space-lg); color: var(--ink-light);">Explora diferentes opciones de diseño para la adaptación web</p>
+        </header>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="section">
+            <h2 class="section-title">📚 Navegación por Secciones</h2>
+            <p class="section-desc">Cada sección muestra diferentes variantes comparables del mismo elemento</p>
+            
+            <nav class="nav-grid">
+                <a href="sections/typography/index.html" class="nav-card">
+                    <h3>Tipografías</h3>
+                    <p>Fuentes serif, display, script y monospace. Comparación de legibilidad y estilo.</p>
+                </a>
+
+                <a href="sections/buttons/index.html" class="nav-card">
+                    <h3>Botones</h3>
+                    <p>Primarios, secundarios, ghost, stamps. Estados hover, active y disabled.</p>
+                </a>
+
+                <a href="sections/cards/index.html" class="nav-card">
+                    <h3>Tarjetas</h3>
+                    <p>Pistas, expedientes, evidencias. Variantes de diseño y densidad de información.</p>
+                </a>
+
+                <a href="sections/animations/index.html" class="nav-card">
+                    <h3>Animaciones</h3>
+                    <p>Hover effects, fade-in, typewriter, page-turn, stamp. Con toggle reduce-motion.</p>
+                </a>
+
+                <a href="sections/dialogs/index.html" class="nav-card">
+                    <h3>Diálogos</h3>
+                    <p>Conversaciones, interrogatorios, transcripciones. Con y sin avatares.</p>
+                </a>
+
+                <a href="sections/lists/index.html" class="nav-card">
+                    <h3>Listas</h3>
+                    <p>Casos, navegación, filtros, tags. Layouts compactos y espaciosos.</p>
+                </a>
+
+                <a href="sections/modals/index.html" class="nav-card">
+                    <h3>Modales</h3>
+                    <p>Overlays, detalles de pista, drawers. Variantes de presentación.</p>
+                </a>
+
+                <a href="sections/progress/index.html" class="nav-card">
+                    <h3>Progreso</h3>
+                    <p>Barras, badges, contadores. Indicadores de estado del caso.</p>
+                </a>
+
+                <a href="sections/maps/index.html" class="nav-card">
+                    <h3>Mapas</h3>
+                    <p>Vistas espaciales, pines, grabados. Estilo siglo XIX.</p>
+                </a>
+            </nav>
+        </section>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="section">
+            <h2 class="section-title">📝 Vista Completa</h2>
+            <p class="section-desc">Todos los elementos en una sola página para comparación rápida</p>
+            <a href="all-in-one.html" class="nav-card" style="display: block; max-width: 500px; margin: 0 auto;">
+                <h3>all-in-one.html</h3>
+                <p>Documento completo con todos los componentes y variantes en un solo archivo.</p>
+            </a>
+        </section>
+    </div>
+</body>
+</html>
